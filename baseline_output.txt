@@ -1,0 +1,17 @@
+450 images, 3 classes, feature dim 16, 1.0 ms/image (segment+features)
+Lesion segmentation vs ground truth: mean IoU 0.860, median 0.891, mean |area error| 13.1%  (n=300 diseased leaves)
+              precision    recall  f1-score   support
+
+      blight      1.000     1.000     1.000        45
+     healthy      1.000     1.000     1.000        45
+   leaf_spot      1.000     1.000     1.000        45
+
+    accuracy                          1.000       135
+   macro avg      1.000     1.000     1.000       135
+weighted avg      1.000     1.000     1.000       135
+
+confusion:
+ [[45  0  0]
+ [ 0 45  0]
+ [ 0  0 45]]
+importance of [lesion_frac, n_lesions, mean_area, max_area]: [0.12  0.184 0.243 0.201]
